@@ -1,0 +1,98 @@
+{% extends 'users/userbase.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Results</title>
+    <!-- <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #343a40;
+            margin-bottom: 20px;
+        }
+
+        .result {
+            background: #f1f1f1;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .result h2 {
+            color: #007bff;
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+
+        .result p {
+            font-weight: bold;
+            color: #555;
+        }
+
+    </style> -->
+</head>
+<body>
+    <!-- <div class="container">
+        <h1>Training Results</h1>
+
+        <div class="result">
+            <h2>Loss:</h2>
+            <p>{{ loss }}</p>
+        </div>
+
+        <div class="result">
+            <h2>Validation Accuracy:</h2>
+            <p>{{ val_accuracy }}</p>
+        </div>
+
+        <div class="result">
+            <h2>Accuracy:</h2>
+            <p>{{ accuracy }}</p>
+        </div>
+    </div> -->
+
+
+    <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+                    
+                    <table class="table">  
+                            <td>accuracy</td>
+                            <td>: {{acc}}</td>
+                        </tr>                       
+                    </table>
+                    {{nb|safe}}
+                </div>
+
+                <div class="col-lg-5 col-md-12 col-12">
+                   
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+{% endblock %}
